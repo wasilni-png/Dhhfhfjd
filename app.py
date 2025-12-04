@@ -17,7 +17,8 @@ app = Flask(__name__)
 
 # التوكن - قم بتغييره إلى التوكن الخاص بك
 BOT_TOKEN = "8425005126:AAH9I7qu0gjKEpKX52rFWHsuCn9Bw5jaNr0"  # ضع التوكن هنا
-WEBHOOK_URL = "https://mohammedieke.pythonanywhere.com"  # رابط PythonAnywhere الخاص بك
+webhook_url = f"{WEBHOOK_URL}/webhook"
+        result = bot.set_webhook(url=webhook_url)
 
 # تهيئة البوت
 bot = telebot.TeleBot(BOT_TOKEN)
