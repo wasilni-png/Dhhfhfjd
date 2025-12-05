@@ -25,7 +25,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 if not BOT_TOKEN:
     logger.error("❌ BOT_TOKEN غير معين في Environment Variables!")
     # استخدم هذا التوكن للاختبار فقط (استبدله بتوكنك الفعلي)
-    BOT_TOKEN = "8425005126:AAH9I7qu0gjKEpKX52rFWHsuCn9Bw5jaNr0"
+    BOT_TOKEN = "8425005126:AAExDibH8mxVpITuhA98AFfNcUo9Rgdd98A"
     logger.info(f"✅ استخدام التوكن: {BOT_TOKEN[:10]}...")
 
 # تهيئة التطبيق والبوت
@@ -42,7 +42,7 @@ try:
 except Exception as e:
     logger.error(f"❌ فشل تهيئة البوت: {e}")
     # إذا فشل التوكن، حاول بآخر
-    BOT_TOKEN = "8425005126:AAH9I7qu0gjKEpKX52rFWHsuCn9Bw5jaNr0"
+    BOT_TOKEN = "8425005126:AAExDibH8mxVpITuhA98AFfNcUo9Rgdd98A"
     bot = telebot.TeleBot(BOT_TOKEN, parse_mode='HTML')
     logger.info(f"✅ استخدام التوكن البديل: {BOT_TOKEN[:10]}...")
 
